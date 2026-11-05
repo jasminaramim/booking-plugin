@@ -1,0 +1,12 @@
+# OS & Editor
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.log
+config.bat
+node_modules

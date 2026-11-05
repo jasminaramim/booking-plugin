@@ -1,0 +1,455 @@
+/* Nexora Medical Booking Pro - Admin Dashboard Styles */
+
+.nmbp-admin-app {
+  display: flex;
+  min-height: calc(100vh - 50px);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nmbp-admin-app *, .nmbp-admin-app *::before, .nmbp-admin-app *::after {
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.nmbp-sidebar {
+  width: 250px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.nmbp-sidebar-brand {
+  padding: 24px 20px;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nmbp-brand-logo {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.nmbp-brand-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.nmbp-brand-badge {
+  font-size: 10px;
+  background: #0d9488;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.nmbp-sidebar-nav {
+  padding: 16px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nmbp-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  color: #94a3b8;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.nmbp-nav-btn:hover {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.nmbp-nav-btn.active {
+  background-color: #0d9488;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nmbp-nav-icon {
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Main Content Area */
+.nmbp-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+}
+
+.nmbp-topbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nmbp-page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.nmbp-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nmbp-content-body {
+  padding: 28px;
+  flex: 1;
+}
+
+/* Metric / Stat Cards Grid */
+.nmbp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.nmbp-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.nmbp-stat-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.nmbp-stat-icon-teal {
+  background-color: rgba(13, 148, 136, 0.1);
+  color: #0d9488;
+}
+
+.nmbp-stat-icon-amber {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+}
+
+.nmbp-stat-icon-blue {
+  background-color: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+}
+
+.nmbp-stat-icon-green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+
+.nmbp-stat-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.nmbp-stat-label {
+  font-size: 13px;
+  color: #64748b;
+  margin: 2px 0 0 0;
+  font-weight: 500;
+}
+
+/* Data Tables */
+.nmbp-card-table {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.nmbp-table-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nmbp-table-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nmbp-table-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nmbp-search-input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  width: 220px;
+}
+
+.nmbp-search-input:focus {
+  border-color: #0d9488;
+}
+
+.nmbp-ui-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.nmbp-ui-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nmbp-ui-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.nmbp-ui-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Status Badges */
+.nmbp-badge-status {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.nmbp-badge-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.nmbp-badge-confirmed {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.nmbp-badge-completed {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.nmbp-badge-rejected, .nmbp-badge-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.nmbp-badge-paid {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.nmbp-badge-unpaid {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* Modals */
+.nmbp-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.nmbp-modal-window {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nmbp-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nmbp-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nmbp-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+.nmbp-modal-body {
+  padding: 24px;
+}
+
+.nmbp-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: #f8fafc;
+}
+
+/* Buttons */
+.nmbp-adm-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.nmbp-adm-btn-primary {
+  background-color: #0d9488;
+  color: white;
+}
+
+.nmbp-adm-btn-primary:hover {
+  background-color: #0f766e;
+}
+
+.nmbp-adm-btn-secondary {
+  background-color: #0f172a;
+  color: white;
+}
+
+.nmbp-adm-btn-outline {
+  background-color: transparent;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.nmbp-adm-btn-outline:hover {
+  background-color: #f1f5f9;
+}
+
+.nmbp-adm-btn-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.nmbp-adm-btn-sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* Settings Tabs */
+.nmbp-tabs-bar {
+  display: flex;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 24px;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.nmbp-tab-btn {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nmbp-tab-btn.active {
+  color: #0d9488;
+  border-bottom-color: #0d9488;
+  font-weight: 600;
+}
+
